@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* css tamplete */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+    background-color: rgba(0, 111, 199, 0.5);
+}
+
+body> .container{
+    width: 100%;
+    max-width: 1024px;
+    align-self: center;
+    border: 3px solid black;
+    row-gap: 5rem;
+    margin-top: 2rem;
+}
+
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    padding: 0.25rem;
+    width: 100%;
+    background-color: rgba(0, 145, 222, 1);
+    box-shadow: 0px 0px 5px 1px rgba(22, 22, 22, 0.5);
+}
+
+body ul{
+    gap: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+}
+.header> ul li{
+    width: 200px;
+    height: 50px;
+}
+.header> ul a{
+    opacity: 0.5;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.header .scal:hover{
+    opacity: 1;
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+/* header done */
+
+
+
+
+.container> .main-box{
+    gap: 2rem;
+    justify-content: start;
+    padding: 0.5rem;
+    width: 100%;
+    align-items: start;
+}
+
+.main-box .box-img{
+    width: 70%;
+    opacity: 0.5;
+    filter: blur(1px);
+    transition: all 0.3s ease-in-out;
+}
+.project-img> img{
+    object-fit: contain;
+    max-width: 100%;
+    border-radius: 5px;
+}
+.left-slide h2{
+    padding: 8px 16px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: rgba(0, 145, 222, 0.99);
+    box-shadow: 0px 2px 5px 0px rgba(11, 11, 11, 0.3);
+}
+.left-slide p{
+    padding: 8px 16px;
+    color: black;
+    background-color: rgba(0, 145, 222, 0.1);
+}
+
+/* hover Animation */
+.main-box .box-img:hover{
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1.01);
+    box-shadow: 5px 7px 15px 1px rgba(11, 11, 11, 0.3);
+}
+
+.left-slide{
+    width: 300px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    background-color: rgba(0, 145, 222, 0.99);
+}
+
+.ro-rev{
+    flex-direction: row-reverse;
+}
+
+
+
