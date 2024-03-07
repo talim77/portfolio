@@ -1,0 +1,508 @@
+@media (max-width: 1023px) {
+    .main-header{
+        min-height: 83px;
+        /* border: 2px solid red; */
+    }
+    .main-header .logo_menu ul{
+        height: 83px;
+    }
+
+    .main-header> .logo_menu{
+        gap: 1rem;
+    }
+
+    
+
+
+
+
+
+
+
+
+    /* this div use for main containt holding */
+    body> .full-width-100> .containt-holder{
+        padding: 0px 25px;
+    }
+
+
+}
+
+
+/* max-width:789px for mobile header */
+@media (max-width: 789px) {
+    /* this div use for main containt holding */
+    body> .full-width-100> .containt-holder{
+        padding: 0rem 1.5rem;
+    }
+
+    .bg-color{
+        display: none !important;
+    }
+
+    .mbl-menu{
+        display: flex;
+    }
+
+    
+
+
+
+
+
+
+    .mbl-menu{
+        width: 100%;
+        height: 83px;
+        box-sizing: border-box;
+        
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mbl-menu input{
+        display: none;
+    }
+
+    .mbl-menu label{
+        font-size: 20px;
+        font-weight: 700;
+        padding-right: 15px;
+        color: rgba(10, 10, 10, 0.5);
+    }
+
+    .mbl-menu> .slider-menu{
+        top: 83px;
+        right: 0;
+        z-index: 1;
+        min-width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        box-shadow: 0px -1px 2px 1px rgba(70, 70, 70, 0.2);
+        background-color: rgba(70, 70, 70, 0.4);
+
+
+        position: fixed;
+        transform: translateX(900px);
+        transition: all 0.5s ease;
+    }
+
+    /* slider styling */
+    #slider:checked ~ .slider-menu{
+        transform: translateX(0px);
+
+    }
+
+    .mbl-menu-items p{
+        position: fixed;
+        top: -60px;
+        right: 0px;
+        align-self: end;
+        
+        background-color: white;
+        padding: 5px 15px;
+        font-size: 30px;
+        font-weight: 900;
+    }
+
+
+
+    .mbl-menu{
+        padding: 0rem 1rem;
+    }
+
+    .mbl-menu .img img{
+        width: 40px;
+    }
+
+    .mbl-menu> .slider-menu .mbl-menu-items{
+        width: 80%;
+        box-sizing: border-box;
+        align-items: start;
+        justify-content: start;
+        gap: 2rem;
+        padding: 3rem 2rem;
+        height: 100%;
+        background-color: white;
+    }
+
+
+    .mbl-menu-items ul a, .mbl-menu-items li{
+        text-decoration: none;
+        color: black;
+        list-style: none;
+
+        font-size: 21px;
+        font-weight: 600;
+    }
+
+    .mbl-menu-items ul{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .mbl-menu-items hr{
+        width: 100%;
+        border: 1px solid rgba(200, 200, 200, 0.5);
+    }
+
+    .mbl-menu-items .mbl-btns{
+        gap: 1rem;
+    }
+
+    .mbl-btns .sign, .mbl-btns .join-now{
+        border-radius: 50px;
+        padding: 4px 10px 6px 10px;
+        font-size: 14px;
+        font-weight: 600;
+        background-color: white;
+        border: 1px solid black;
+    }
+
+    .mbl-btns .join-now{
+        background-color: black;
+        color: white;
+    }
+
+    .mbl-find-store a{
+        text-decoration: none;
+        color: black;
+        font-weight: 600;
+    }
+
+    .mbl-find-store i{
+        padding-right: 1rem;
+    }
+
+    .sticky-headerr{
+        justify-content: start;
+    }
+
+    .mbl-menu .img img{
+        width: 59px;
+    }
+}
+
+
+
+/* sticky header styling */
+@media (max-width: 767px) and (min-width: 50px) {
+    body> .full-width-100> .bg-green{
+        padding: 0rem 1rem !important;
+    }
+
+    body> .full-width-100> .containt-holder{
+        padding: 0rem;
+    }
+
+
+    /* slider menu */
+    .mbl-menu> .slider-menu{
+        top: 72px;
+        right: 0;
+        z-index: 1;
+        min-width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        box-shadow: 0px -2px 5px 2px rgba(70, 70, 70, 0.4);
+        background-color: rgba(70, 70, 70, 0.4);
+
+        position: fixed;
+        transform: translateX(900px);
+        transition: all 0.5s ease;
+    }
+
+
+    /* star bg change */
+    .bg-star{
+        background-image: url(img/hero-mobile_2021.webp);
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-color: rgb(212, 233, 226);
+        height: auto;
+        padding-bottom: calc((127%) - 241px) !important;
+    }
+    
+
+    .mbl-menu{
+        height: 72px;
+    }
+
+    .mbl-menu .img img{
+        width: 47px;
+    }
+    .mbl-menu-items ul{
+        gap: 26px;
+    }
+
+    .mbl-menu-items li> a{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* sticki header */
+    .sticky-headerr .sticky-btn{
+        display: block;
+    }
+
+    .sticky-headerr{
+        padding: 0rem;
+        justify-content: space-between;
+    }
+
+    .sticky-headerr h3{
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .sticky-headerr .sticky-btn{
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 0.3rem 1rem 0.4rem 1rem;
+    }
+
+    .bg-green{
+        padding: 0 !important;
+    }
+
+
+    /* landing page tablet responsive */
+    /* hide join now btn */
+    .free-coffe .hide-tablet{
+        display: none;
+    }
+    .mbl-join-btn{
+        display: block;
+    }
+
+
+    .bg-star{
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .bg-star .self-align{
+        padding: 0;
+        max-width: 100% !important;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .bg-star .free-coffe{
+        border-color: black;
+        box-sizing: border-box; /* box ka size */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .free-coffe .free-coffe-title{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .free-coffe> .free-coffe-title *{
+        text-align: center;
+    }
+
+    .free-coffe .join-now{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* font sizing */
+    .bg-star .free-coffe-title> h1{
+        font-size: 27px;
+        font-weight: 600;
+    }
+
+    .free-coffe .free-coffe-title p,
+    .free-coffe .join-now p{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 1rem 0rem 2rem 0rem;
+    }
+
+    .free-coffe .join-now button{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 5px 16px 7px 16px;
+        border-radius: 50px;
+        border: none;
+        color: white;
+        background-color: rgb(0, 117, 74);
+    }
+
+    .free-coffe .join-now p{
+        padding-top: 1rem;
+    }
+}
+
+
+
+
+@media (max-width: 420px) and (min-width: 375) {
+
+    /* slider menu */
+    .mbl-menu> .slider-menu{
+        top: 64px;
+    }
+
+    .sticky-headerr .sticky-btn{
+        display: block;
+    }
+}
+
+
+
+
+@media (max-width: 374px) and (min-width: 50px) {
+
+    
+    /* slider menu */
+    .mbl-menu> .slider-menu{
+        top: 64px;
+    }
+
+    .mbl-menu{
+        height: 64px;
+    }
+
+    .mbl-menu .img img{
+        width: 39px;
+    }
+
+    .sticky-headerr br{
+        display: block;
+    }
+
+    .mbl-menu-items ul{
+        gap: 26px;
+    }
+
+    .mbl-menu-items li> a{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+    /* slider menu */
+    .sticky-headerr .sticky-btn{
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 50px;
+        padding: 5px 14px 6px 14px;
+    }
+
+    .sticky-headerr h3{
+        line-height: 1.5;
+    }
+
+    .mbl-menu{
+        height: 64px;
+    }
+
+    .mbl-menu .img img{
+        width: 39px;
+    }
+
+    .sticky-headerr br{
+        display: block;
+    }
+
+    .mbl-menu-items ul{
+        gap: 26px;
+    }
+
+    .mbl-menu-items li> a{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .sticky-headerr h3{
+        line-height: 1.5;
+    }
+    /* Header completed including respinsive */
+
+    /* landing page styling */
+    .free-coffe .free-coffe-title h1{
+        font-size: 22px;
+    }
+
+    .b3g-star div{
+        border: 2px solid red;
+    }
+
+    /* landing page styling done */
+
+}
+
+
+
+
+
+
+
+
+
+/* max-width: 1440px and 1024px */
+
+@media (max-width: 1440px) and (min-width: 768px) {
+    /* bg star respinsive */
+    .bg-star{
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive / max-width: 425px */
+
+
+
+
+

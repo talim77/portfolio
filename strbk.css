@@ -1,0 +1,877 @@
+
+
+/* mobile header display none */
+.mbl-menu{
+    display: none;
+}
+
+
+/* header styling */
+header, nav, main{
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 2px solid blueviolet; */
+}
+
+.main-header{
+    width: 100%;
+    min-height: 99px;
+    justify-content: space-between;
+    background-color: white;
+    /* border: 1px solid red; */
+}
+
+.main-header .logo img{
+    max-width: 60px;
+}
+.main-header .logo img:hover{
+    cursor: pointer;
+}
+
+.main-header .logo_menu ul{
+    gap: 2rem;
+    height: 99px;
+    align-items: end;
+}
+
+.main-header .logo_menu a,
+.main-header .logo_menu li{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.main-header .logo_menu a:hover{
+    color: var(--green-color);
+}
+
+.main-header> .logo_menu{
+    gap: 2rem;
+}
+
+.main-header .brdr{
+    height: 62%;
+    box-shadow: inset 0px -6px 0px 0px rgb(0, 117, 74);
+}
+
+.main-header .brdr-no{
+    box-shadow: none;
+}
+
+
+/* buttons styling */
+.main-header .find-store_buttons{
+    gap: 4rem;
+    margin: 0;
+}
+.find-store> a:hover{
+    color: var(--green-color) !important;
+}
+
+.main-header .find-store a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+}
+
+.main-header .find-store i{
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.main-header .btns-for-header{
+    gap: 1rem;
+}
+
+.sing, .join{
+    transition: all 0.3s ease;
+}
+.btns-for-header .sing:hover{
+    background-color: rgba(128, 128, 128, 0.2);
+    cursor: pointer;
+}
+.btns-for-header .join:hover{
+    background-color: rgba(12, 12, 12, 0.8);
+    cursor: pointer;
+}
+
+.main-header .sing,
+.main-header .join {
+    border-radius: 50px;
+    padding: 4px 17px 6px 17px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.main-header .join{
+    background-color: black;
+    color: white;
+}
+
+
+
+/* sticky header */
+
+.sticky-headerr br{
+    display: none;
+}
+
+.sticky-headerr .sticky-btn{
+    display: none;
+}
+
+  /* sticky header */
+
+  .sticky-headerr {
+    /* border: 5px solid red; */
+    justify-content: start;
+}
+
+.bg-green{
+    background-color: rgb(30, 57, 50);
+    color: white;
+}
+
+.sticky-header{
+    position: sticky;
+    top: 0px;
+    height: 50px;
+}
+
+.sticky-header h3{
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding-left: 6rem;
+}
+
+/* gol wala R styling sup */
+.sticky-header sup{
+    font-size: 8px;
+}
+
+
+
+
+/* All header style done */
+
+/* free coffe styling */
+
+.bg-star{
+    background-image: url(img/desktop\ view\ star.webp);
+    background-position: 50%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(212, 233, 226);
+    /* aspect-ratio: 16 / 9; */
+    height: 810px;
+}
+
+.bg-star .free-coffe{
+    align-items: start;
+    width: 46.45%;
+    min-width: 100%;
+    /* border: 2px solid red; */
+}
+
+.bg-star .free-coffe-title> h1{
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+
+/* hide join now btn */
+.mbl-join-btn{
+    display: none;
+}
+
+
+.free-coffe .free-coffe-title p,
+.free-coffe .join-now p{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 1.5rem 0rem 2rem 0rem;
+}
+
+.free-coffe .join-now p{
+    padding-top: 1rem;
+}
+
+.free-coffe .join-now a{
+    color: black;
+}
+
+
+
+.free-coffe .join-now button{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 16px 7px 16px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 117, 74);
+    transition: all 0.3s ease;
+}
+.join-now .for-hover-btn:hover{
+    background-color: rgba(0, 117, 74, 0.9);
+    cursor: pointer;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+
+/* abobe tablet devices responsive done */
+/* getting started is easy */
+.epadd{
+    /* padding-top: 128px; */
+    /* padding-left: 48px; */
+    /* padding-right: 48px; */
+    padding: 128px 48px 64px 48px;
+}
+
+.mbl-display{
+    display: none;
+}
+
+
+.epadd .containt-holder{
+    padding: 0px 48px;
+}
+
+.full-width-100 .getting-started-title h2{
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.full-width-100 .getting-started-title p{
+    font-size: 16px;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.getting-started-title + .boxes{
+    padding-top: 48px; /* padding ko media me add karna h, mai bhula hu*/ 
+    align-items: start;
+}
+
+.boxes .box-midl{
+    padding: 0px 48px;
+}
+
+
+.boxes .step{
+    border: 2px solid var(--green-color);
+    color: var(--green-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+.boxes .step span{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.boxes .step-info h2{
+    text-align: center;;
+    padding: 2rem 0rem;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.boxes .step-info p{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+
+.step-info p sup{
+    font-size: 8px;
+    position: relative;
+    top: 5px;
+    /* border: 2px solid red; */
+}
+
+.step-info p a{
+    color: var(--green-color);
+}
+
+/* now hover styling of this */
+
+.step-info p a:hover{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* get your favorites */
+.get-your-favorites-title{
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--lite-green-color);
+
+}
+
+.get-your-favorites-title> .get-your-both-title_btns{
+    width: 100%;
+    max-width: 1440px;
+}
+
+
+.get-your-favorites-title h3{
+    padding: 48px 0px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.get-your-favorites-btns button{
+    border: none;
+    padding: 10px 20px;
+    min-width: 110px;
+    min-height: 60px;
+    font-size: 28px;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.get-your-favorites-btns .brdr{
+    box-shadow: inset 0px -5px 0px 0px var(--green-color);
+}
+
+.get-your-favorites-btns button i{
+    font-size: 10px;
+    color: gold;
+}
+
+
+.full-width-100 .both-img-info{
+    min-width: 100%;
+    background-color: var(--low-green-color);
+    box-shadow: inset 0px 3px 5px 0px rgba(128, 128, 128, 0.2);
+}
+
+.both-img-info .info-img{
+    width: 100%;
+    max-width: 1440px;
+    padding: 32px 0px;
+    gap: 4rem;
+}
+
+.info-img .img, .info-img .info-of-img{
+    width: 50%;
+}
+
+.info-img .img{
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    max-width: 380px;
+}
+.info-img .info-of-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    max-width: 345px;
+}
+
+.both-img-info .img img{
+    width: 375px;
+}
+
+.info-of-img h3{
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0px 0px 18px 0px;
+}
+.info-of-img p{
+    line-height: 1.5;
+}
+
+
+
+
+/* get your favorites for free is done */
+/* Endless Extras styling start */
+/* Structer copy past karke banaya hu */
+.endless-extras p{
+    max-width: 640px;
+}
+
+.endless-extras .endless-img{
+    padding: 48px 0px;
+}
+
+
+.endless-img img{
+    min-width: 112px;
+    max-width: 112px;
+    padding: 48px 0px 0px 0px;
+}
+
+.endless-info a{
+    color: var(--green-color);
+    padding-top: 16px;
+}
+
+
+/* cash or card, you earn Stars */
+
+.bg-cash-or-card{
+    background-color: var(--yellow-green-color);
+    padding-top: 64px;
+}
+
+.bg-cash-or-card hr{
+    border: none;
+    background-color: rgba(128, 128, 128, 0.2);
+    margin: 48px 0px !important;
+    height: 1px;
+    width: 100%;
+    margin: 5px;
+}
+
+.for-cash-or-card-boxes{
+    width: 100%;
+    justify-content: start;
+    align-items: start;
+}
+
+
+.cash-or-card-clm{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.cash-or-card-clm> h3 i{
+    font-size: 14px !important;
+}
+
+.cash-or-card-for-1023{
+    display: flex;
+}
+
+.bg-cash-or-card .for-cash-or-card-row{
+    padding: 0;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+}
+
+.cash-or-card-h {
+    flex-direction: column;
+    align-items: start;
+    min-width: 260px;
+}
+
+.cash-or-card-hh{
+    align-items: start;
+    max-width: 280px;
+}
+
+.cash-or-card-hh h2{
+    padding: 0 !important;
+    text-align: start !important;
+}
+
+.cash-or-card-hh p{
+    text-align: start !important;
+    padding-top: 20px;
+}
+
+.cash-or-card-h h3{
+    font-size: 24px;
+}
+.cash-or-card-h h3 i{
+    font-size: 10px;
+}
+
+.for-cash-or-card-row img{
+    padding: 0px 16px 0px 0px;
+}
+
+.cash-or-card-img img{
+    min-width: 128px;
+    max-width: 128px;
+}
+
+.cash-or-card-info {
+    border: 2px solid red;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.cash-or-card-info h2{
+    padding: 0 !important;
+}
+
+
+
+/* Keep the rewards comming */
+.bg-img-keep-rewards{
+    background-image: url(img/bg\ keep\ the\ rewards.webp);
+    background-color: aqua;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    padding: 32px;
+}
+
+.bg-color-keep-rewards{
+    background-color: rgb(212, 233, 226);
+}
+
+#flex{
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+    padding: 40px;
+}
+
+
+.star-left{
+    background-image: url(img/left\ star\ keep\ the\ rewards.svg);
+}
+.right-star{
+    background-image: url(img/ryt\ star\ keep\ the\ rewards.svg);
+}
+
+.star-left, .right-star{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 18% 10%;
+    width: auto;
+}
+.star-left-mbl, .right-star-mbl{
+    display: block;
+}
+
+
+#img-delta-bank img{
+    max-width: 190px;
+    padding-bottom: 32px;
+}
+
+#remv-padd-l{
+    padding: 0;
+    padding-left: 24px;
+}
+#remv-padd-r{
+    padding-right: 24px;
+}
+
+#keep-the-boxes{
+    padding: 48px 0px 48px 0px;
+}
+
+.join-starbk-btn button{
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px 16px 7px 16px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 117, 74);
+    transition: all 0.2s ease;
+}
+.join-starbk-btn button:hover{
+    cursor: pointer;
+    background-color: rgba(0, 117, 74, 0.9);
+}
+
+.Rspan{
+    font-size: 15px;
+}
+
+
+
+/* Questions */
+
+.question{
+    padding: 24px;
+    justify-content: start;
+}
+
+.qustn{
+    box-sizing: border-box;
+    padding-left: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: start;
+    justify-content: center;
+}
+
+.qustn h4{
+    font-size: 28px;
+    padding-bottom: 16px;
+    padding-top: 24px;
+}
+
+.qustn p{
+    max-width: 62%;
+    line-height: 1.5;
+}
+
+.qustn a{
+    color: var(--green-color);
+}
+
+
+/* terms and conditions */
+.bg-terms{
+    background-color: rgb(249, 249, 249);
+}
+.bg-terms p a> i{
+    font-size: 12px;
+}
+.bg-terms p sup{
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+.text{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    /* padding: 24px 24px; */
+    /* border: 2px dashed red; */
+}
+
+.text .left-text{
+    width: 50%;
+}
+
+.text .ryt-text {
+    width: 50%;
+    padding-left: 32px;
+}
+
+
+.text h6{
+    font-size: 16px;
+    color: rgb(104, 104, 104);
+    padding: 24px 0px;
+}
+
+.text p a{
+    color: var(--green-color);
+}
+
+
+.text p{
+    font-size: 14px;
+}
+
+
+
+/* footer copy past old project */
+/* footer copy past old project */
+.for-arrow i{
+    display: none;
+}
+.for-arrow a{
+    cursor: default;
+}
+
+
+.full-width-footer{
+    box-shadow: 0px -1px 2px -0px rgba(100, 100, 100, 0.3);
+}
+
+
+
+
+.flex-centerN{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-columnN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+
+.footer{
+    align-items: start;
+    max-width: 1500px;
+    /* padding-left: 1rem; */
+
+    margin: 4rem 0rem;
+}
+
+.icons-shareZ{
+    justify-content: start !important;
+    gap: 1rem;
+    /* border: 2px solid red; */
+}
+
+.icons-shareZ> .iconZ{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: black;
+    /* border: 2px solid red; */
+    transition: all 0.1s ease;
+}
+/* hover effect */
+
+.icons-shareZ> .iconZ:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 7px rgba(100, 100, 100, 0.2);
+}
+
+
+
+.icons-shareZ> .iconZ> i{
+    color: white;
+    font-size: larger;
+}
+
+.terms-of-usesZ{
+    gap: 1rem;
+    margin: 2rem 0rem;
+    justify-content: start;
+}
+
+.terms-of-usesZ> .tagsZ{
+    min-width: 110px;
+}
+
+.tagsZ> a{
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tagsZ> a:hover{
+    text-decoration: underline;
+}
+
+.terms-of-usesZ span{
+    height: 20px;
+    min-width: 1px;
+    background-color: black;
+}
+
+.All-rights-reserved> p{
+    color: gray;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+hr{
+    display: flex;
+    min-width: 100%;
+    border: 1px solid rgba(230, 230, 230, 0.99);
+    margin-bottom: 32px;
+}
+
+
+
+
+.linksZ{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    min-width: 100%;
+    box-sizing: border-box;
+    /* gap: 1rem; */
+    padding: 48px 0px;
+}
+
+.linksZ> .li-tags{
+    min-width: 150px;
+    max-width: 220px;
+    padding-right: 2%;
+    /* padding: 5px; */
+}
+.linksZ .About-us{
+    min-width: 200px;
+}
+
+.linksZ> .for-business-pertner{
+    min-width: 210px;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.linksZ> .li-tags ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+}
+
+.btnZ> ul{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start !important;
+    gap: 1.5rem;
+}
+.btnZ ul> li{
+    cursor: pointer;
+}
+
+.linksZ .btnZ> .for-arrow a{
+    color: black;
+    font-size: 19px !important;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.linksZ a, li{
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.5rem;
+    color: gray;
+    transition: 0.5s ease;
+}
+
+
+.btnZ> ul li:hover > a{
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
