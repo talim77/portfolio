@@ -1,0 +1,607 @@
+@media (min-width: 1441px) {
+
+    .getting-started-endless + .Nboxes{
+        padding: 0px calc(100% - 1170px);
+        padding-top: 48px;
+        /* border: 1px solid red; */
+    }
+
+
+}
+
+
+
+/* cash or card */
+@media (max-width: 1023px) {
+    .for-cash-or-card-boxes{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .cash-or-card-for-1023{
+        display: flex;
+        padding-top: 32px;
+    }
+
+    .cash-or-card-hh{
+        align-items: start;
+        max-width: 100%;
+    }
+
+    .cash-or-card-hh p{
+        max-width: 350px;
+    }
+
+
+
+
+
+
+}
+
+
+/* getting started is easy */
+
+@media (max-width: 767px) {
+    
+    .epadd{
+        padding-top: 64px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .mbl-display{
+        display: block;
+    }
+    .mbl-hide{
+        display: none;
+    }
+    
+    .full-width-100 .getting-started-title h2{
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+    }
+    
+    .full-width-100 .getting-started-title p{
+        font-size: 16px;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    
+    .getting-started-title + .boxes{
+        padding-top: 48px;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .boxes .box{
+        /* padding-top: 48px; */
+        flex-direction: row;
+        align-items: start;
+    }
+
+    .boxes .box-midl{
+        padding: 0px 0px;
+    }
+    
+    
+    .boxes .step{
+        border: 2px solid var(--green-color);
+        color: var(--green-color);
+        border-radius: 50%;
+        min-width: 48px;
+        min-height: 48px;
+    }
+    
+    .boxes .step span{
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .boxes .step-info{
+        align-items: start;
+        justify-content: start;
+        padding: 0px 0px 32px 16px;
+    }
+    
+    .boxes .step-info h2{
+        text-align: start;
+        padding: 0rem 0rem;
+        font-size: 17px;
+        font-weight: 600;
+    }
+    
+    .boxes .step-info p{
+        font-size: 15px;
+        text-align: start;
+        padding: 16px 0px 0px 0px;
+        letter-spacing: 0px;
+        line-height: 1.5rem;
+    }
+    
+    .step-info p a{
+        color: var(--green-color);
+    }
+    
+
+
+
+
+
+    /* get your favorites for free */
+
+    /* get your favorites */
+    .get-your-favorites-title{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: var(--lite-green-color);
+    }
+
+    .gert-your-favorites-title> .get-your-both-title_btns{
+        border: 1px solid blue;
+    }
+
+
+    .get-your-favorites-title h3{
+        padding: 48px 0px 10px 0px; /**/
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .get-your-favorites-btns{ /*ye pura element include h*/
+        width: 100%;
+        max-width: 1440px;
+        /* border: 2px solid red; */
+    }
+
+    .get-your-favorites-btns button{
+        border: none;
+        padding: 0px;
+        min-width: 20%;
+        min-height: 60px;
+        font-size: 19px;
+        font-weight: 600;
+        background-color: transparent;
+    }
+
+    .get-your-favorites-btns .brdr{
+        box-shadow: inset 0px -4px 0px 0px var(--green-color);
+    }
+
+    .get-your-favorites-btns button i{
+        font-size: 8px;
+        color: gold;
+    }
+
+
+    .full-width-100 .both-img-info{
+        min-width: 100%;
+        background-color: var(--low-green-color);
+    }
+
+    .both-img-info .info-img{
+        flex-direction: column;
+        width: 100%;
+        max-width: 1440px;
+        padding: 32px 0px;
+        gap: 4rem;
+    }
+
+    .info-img .img, .info-img .info-of-img{
+        min-width: 100%;
+        padding: 0px 24px;
+    }
+
+    .info-img .img{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        max-width: auto;
+        padding: 0px;
+    }
+    .info-img .info-of-img{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* max-width: 345px; */
+    }
+
+    .both-img-info .img img{
+        width: 100%;
+    }
+
+    .info-of-img h3{
+        font-size: 20px;
+        font-weight: 500;
+        padding: 0px 0px 18px 0px;
+    }
+    .info-of-img p{
+        line-height: 1.5;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+
+
+
+    /* get your favorites for free is done */
+
+    /* Endless Extras styling start */
+
+    .endless-h{
+        display: block;
+    }
+
+    .endless-extras p{
+        max-width: 690px;
+        /* border: 2px solid red; */
+    }
+
+
+    .endless-img img{
+        padding: 0px;
+    }
+
+    .for-endless .endless-boxes{
+        padding: 48px 0px 0px 0px;
+    }
+
+    .endless-info{
+        padding: 0px 0px 0px 16px !important;
+    }
+    .endless-info-rmv-padd{
+        padding: 0 !important;
+    }
+
+    .endless-info p{
+        font-size: 15px !important;
+    }
+
+
+    .for-endless .flex-center-column{
+        padding: 0px 0px 32px 0px;
+    }
+
+
+
+    .for-endless .containt-holder{
+        padding: 0px 16px !important;
+    }
+
+
+
+
+    /* cash or card */
+    .cash-or-card-titlt h2{
+        font-size: 24px !important;
+    }
+
+    .bg-cash-or-card hr{
+        border: none;
+        background-color: rgba(128, 128, 128, 0.2);
+        margin: 0px 0px !important;
+        height: 1px;
+        width: 100%;
+        margin: 5px;
+    }
+
+
+    .cash-or-card-for-1023{
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .cash-or-card-h{
+        padding: 0px !important;
+        justify-content: start;
+    }
+
+    .cash-or-card-h h3{
+        font-size: 19px;
+    }
+
+    .cash-or-card-hh p{
+        max-width: 97%;
+    }
+
+    .cash-or-card-img img{
+        min-width: 112px;
+        max-width: 112px;
+    }
+
+
+    /* keep the rewards */
+
+    .bg-img-keep-rewards{
+        padding: 0;
+    }
+
+    #remv-padd-l{
+        padding: 0;
+    }
+
+    .endless-info-rmv-padd p{
+        padding-left: 16px !important;
+    }
+
+    #img-delta-bank img{
+        max-width: 125px;
+        padding-bottom: 32px;
+    }
+
+    #flex{
+        flex-direction: column;
+        padding: 8px 16px;
+    }
+
+    .keep-colm-mbl{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0px !important;
+    }
+
+    #keep-the-boxes{
+        padding: 48px 0px 48px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .star-left, .right-star{
+        display: none;
+    }
+
+    .keep-the-title h2{
+        font-size: 24px !important;
+        padding-top: 16px;
+    }
+
+    .star-left-mbl, .right-star-mbl{
+        display: block;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        max-width: 147px;
+        /* min-height: 110px; */
+
+        width: 20%;
+        padding: 8% 10%;
+    }
+
+    .star-left-mbl{
+        background-image: url(img/left\ star\ mbl.svg);
+    }
+    .right-star-mbl{
+        background-image: url(img/ryt-star-mbl.svg);
+        margin-left: calc(100% - 20%);
+    }
+
+
+
+
+    /* Questions */
+
+    .question{
+        padding: 16px !important;
+    }
+
+    .qustn{
+        padding-left: 0%;
+    }
+
+    .qustn h4{
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 16px;
+        padding-top: 0px;
+    }
+
+    .qustn p{
+        max-width: 100%;
+
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .text{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        padding: 0px 16px;
+    }
+
+
+
+    .text .left-text, .text .ryt-text{
+        width: 100%;
+        padding: 0;
+    }
+
+    .text h6{
+        font-size: 13px;
+    }
+    
+
+    /* footer styling */
+
+    .footer> .linksZ .btnZ> .for-arrow a{
+        /* border: 5px solid red; */
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 16px !important;
+    }
+
+    .footer> .linksZ{
+        padding: 35px 10px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 374px) {
+    .get-your-favorites-title h3{
+        font-size: 20px;
+    }
+
+    .full-width-100 .getting-started-title h2{
+        font-size: 20px;
+        
+    }
+
+
+
+    /* costumize your drink */
+    .both-img-info .info-img{
+        gap: 2rem;
+    }
+
+
+
+    /* endless extras */
+    .endless-extras h2{
+        font-size: 22px !important;
+    }
+
+
+    /* keep the rewards */
+
+    .boxes .step-info{
+        align-items: start;
+        justify-content: start;
+        padding: 0px 0px 32px 16px;
+    }
+    .boxes .remov-padd-small-fon {
+        padding: 0px 0px 0px 16px;
+    }
+
+    .epadd{
+        padding: 32px 16px 32px 16px;
+    }
+
+
+
+    #img-delta-bank img{
+        max-width: 125px;
+        padding-bottom: 0px;
+    }
+
+
+
+
+    /* footer */
+
+    .tagsZ a{
+        font-size: 14px;
+    }
+
+
+
+}
+
+
+
+
+
+/* footer media query */
+
+
+@media (max-width: 1023px) {
+
+    .containt-holder{
+        padding: 0px 20px;
+    }
+
+    .for-arrow i{
+        display: block;
+        color: black;
+        font-size: 20px;
+    }
+
+    .for-arrow {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .footer> .linksZ{
+        flex-direction: column;
+        /* gap: 0; */
+        padding: 35px 0px 22px 0px;
+    }
+
+    .footer> .linksZ .li-tags{
+        display: flex;
+        min-width: 100%;
+    }
+
+    .footer> .linksZ ul{
+        width: 100%;
+        margin: 5px 10px;
+        /* border: 2px solid blue; */
+    }
+
+    .footer> .linksZ .btnZ> .for-arrow a{
+        /* border: 5px solid red; */
+        margin: 0;
+        padding-bottom: 20px;
+        font-size: 19px;
+    }
+
+    #padd-zero{
+        padding-bottom: 0px;
+    }
+
+    .linksZ .for-arrow:hover{
+        cursor: pointer;
+    }
+
+
+    .footer> .linksZ .btnZ ul{
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .footer> .linkszzzzZ .btnZ:hover ul {
+        max-height: 1000px; /* hover roka hu*/
+    }
+
+
+    /* icons ka css code */
+
+    .share{
+        padding-left: 1rem;
+        /* padding-top: 1rem; */
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .share .terms-of-usesZ{
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    .share .terms-of-usesZ span{
+        display: none;
+    }
+
+}
+
+
+
+
