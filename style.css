@@ -15,6 +15,7 @@
     align-items: center;
 }
 .flex-col{
+    padding: 1rem 0.75rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,8 +35,8 @@ body> .container{
     width: 100%;
     max-width: 1024px;
     align-self: center;
-    border: 3px solid black;
-    row-gap: 5rem;
+    /* border: 3px solid black; */
+    row-gap: 10rem;
     margin-top: 2rem;
 }
 
@@ -46,7 +47,7 @@ body> .container{
     backdrop-filter: blur(2px);
     padding: 0.25rem;
     width: 100%;
-    background-color: rgba(0, 145, 222, 1);
+    background-color: rgba(0, 145, 222, 0.5);
     box-shadow: 0px 0px 5px 1px rgba(22, 22, 22, 0.5);
 }
 
@@ -83,12 +84,6 @@ body ul{
     align-items: start;
 }
 
-.main-box .box-img{
-    width: 70%;
-    opacity: 0.5;
-    filter: blur(1px);
-    transition: all 0.3s ease-in-out;
-}
 .project-img> img{
     object-fit: contain;
     max-width: 100%;
@@ -109,12 +104,7 @@ body ul{
 }
 
 /* hover Animation */
-.main-box .box-img:hover{
-    opacity: 1;
-    filter: blur(0px);
-    transform: scale(1.01);
-    box-shadow: 5px 7px 15px 1px rgba(11, 11, 11, 0.3);
-}
+
 
 .left-slide{
     width: 300px;
@@ -127,5 +117,106 @@ body ul{
     flex-direction: row-reverse;
 }
 
+/* media query only 768px */
+@media (min-width: 768px) {
+    .mbl{
+        animation: fadeOut 0.5s ease-in-out 1;
+        display: none;
+    }
+    .pc{
+        display: flex;
+        animation: fadeIn 0.5s ease-in-out 1;
+    }
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+        } to{
+            opacity: 1;
+        }
+    }
 
+
+
+    .main-box .box-img{
+        width: 70%;
+        opacity: 0.75;
+        filter: blur(1px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .main-box .box-img:hover{
+        opacity: 1;
+        filter: blur(0px);
+        transform: scale(1.01);
+        box-shadow: 5px 7px 15px 1px rgba(11, 11, 11, 0.3);
+    }
+
+    .left-slide{
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+
+@media (max-width: 767px) {
+    .pc{
+        display: none;
+    }
+    .mbl{
+        display: flex;
+        animation: fadeIn 0.75s ease-in-out 1;
+    }
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0;
+            transform: translateY(-777px);
+        } to{
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+
+
+    .main-box{
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+        /* border: 2px solid blue; */
+    }
+
+    .box-img{
+        min-width: 100%;
+
+    }
+
+    .project-img> img{
+        width: 200%;
+    }
+
+    .left-slide{
+        width: 100%;
+    }
+
+
+}
 
