@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stark</title>
 
-    <!-- <script src="https://kit.fontawesome.com/d61117123c.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/d61117123c.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="Go-To-Portfolio.css">
 
 
     <!-- Costume breakPoitns -->
@@ -53,6 +55,7 @@
 
                 <div class=" container flex justify-end items-center gap-5 ">
                     <a href="#" class="hidden md:flex my-2 py-[2px] px-[5px]  border-2 border-[#f7f7eb] hover:border-2 hover:border-[#381df1] rounded box-border ">LOG IN</a>
+                    
                     <a href="#" class=" text-white bg-[#381fd1] hover:bg-[#371fd1d4] transition-all px-3 py-[6px] rounded-md min-w-[155px] ">START FREE TRIAL</a>
                     <i class="fa-solid fa-bars md:hidden text-[20px] mx-2"></i>
                 </div>
@@ -62,11 +65,11 @@
     <!-- heading done -->
 
 
-    <div id="all-containet" class=" w-full flex flex-col items-center  max-[1200px]: px-6 ">
+    <div id="all-containet" class=" w-full flex flex-col items-center  max-[1200px]: px-4 ">
 
-        <div id="library" class="md:hidden min-w-full max-w-[840px] flex flex-col justify-start my-4 ">
-            <div class=" min-w-full flex justify-between *:font-semibold *:text-gray-500 py-2 ">
-                <div class=" min-w-[33%] flex justify-start ">
+        <div id="library" class="md:hidden min-w-full max-w-[840px] flex flex-col justify-start *:text-[#4b4b4e]  my-4 ">
+            <div class=" min-w-full flex justify-between *:font-semibold *:text-[#4b4b4e]    py-2 ">
+                <div class=" min-w-[33%] flex justify-start *:text-[#381fd1] ">
                     <a href="#">Library</a>
                 </div>
                 <div class=" min-w-[33%] flex justify-start ">
@@ -79,13 +82,13 @@
                 </div>
             </div>
     
-            <div class="max-w-[65%] relative mt-[38px] ">
+            <div class="max-w-[65%] relative mt-[20px] ">
                 <input type="search" class=" w-full min-h-11 border-2 border-[#acacaf] rounded ">
                 <i class="fa-solid fa-magnifying-glass  text-[#acacaf] absolute left-[15px] top-[30%] "></i>
             </div>
         </div>
         <!-- second header done -->
-        <hr>
+        <hr class=" md:hidden w-full  min-h-[1px] bg-black mb-2 ">
 
 
 
@@ -95,7 +98,7 @@
                 <div class="w-full relative top-[-5px]">
                     <label for="Search" class=" font-semibold text-[#4b4b4e] leading-none ">Search Library</label>
                     <input id="Search" type="search" class=" w-full min-h-11 border-2 border-[#acacaf] rounded md:mt-[11px] ">
-                    <i class="fa-solid fa-magnifying-glass  text-[#acacaf] absolute left-[15px] top-[30%] "></i>
+                    <i class="fa-solid fa-magnifying-glass  text-[#acacaf] absolute left-[15px] top-[65%] "></i>
                 </div>
 
                 <!-- side nav bar Library -->
@@ -170,7 +173,7 @@
                             </div>
     
                             <p class="text-[#381fd1] font-bold tracking-widest mt-3 mb-1 ">RESOURCES</p>
-                            <h2 class=" text-[24px] font-bold md:truncate leading-[27px] ">Making Accessible<br class="hidden md:flex"> Books</h2>
+                            <h2 class=" text-[24px] font-bold md:truncate leading-[27px] ">Making<br class="hidden md:flex"> Accessible Books</h2>
                         </div>
                     </a>
 
@@ -393,5 +396,16 @@
     <div class=" h-[50px] w-[50px] p-[10px] bg-[#381fd1] flex justify-center items-center rounded-full  fixed right-[25px] bottom-[24px] ">
         <img src="img/fixed.png" alt="" class="max-w-[35px] max-h-[35px] ">
     </div>
+
+
+
+
+    <!--go to Porfolio page  -->
+    <div class="stiki flex">
+        <a href="index.html">
+            <button>Go To<br>Portfolio</button>
+        </a>
+    </div>
+
 </body>
 </html>
