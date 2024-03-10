@@ -40,3 +40,8 @@ All projects within the portfolio are meticulously crafted to be fully responsiv
 
 The repository reflects continuous practice and learning in the realms of HTML, CSS, and Tailwind CSS, showcasing evolving skills and creative application.
 This portfolio repository is a testament to my dedication to web development, combining aesthetic design with technical proficiency. Feel free to explore and discover the diverse projects within!
+
+
+
+ye sare changes apne vs code me repo ko access karke kiya hai wahi chek kar rha hu ki
+changes update hua h ki nhi
