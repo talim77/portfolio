@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 20px 0px;
+            transition: all 0.25s;
+            font-family: sans-serif;
+        }
+        body{
+            padding: 111px 20px;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1440px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border: 5px dashed black;
+        }
+        button{
+            background-color: hotpink;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px 15px;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        div{
+            min-width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <h1 id="title">Background color changed 0 times</h1>
+        </div>
+        <div>
+            <h2 id="rgb" class="rgbV">RGB : 255,255,255</h2>
+            <button id="btn">Generate Color</button>
+        </div>
+    </div>
+
+<!-- >---------------------------------------< -->
+<!-- >---------------------------------------< -->
+
+    <!-- <script src="app.js" > </script> -->
+    
+    <script>
+        console.log("My first DOM project");
+
+        let colorChanged = document.querySelector("h1"); // for inner content change
+        let Rgb = document.querySelector(".rgbV"); // for RGB value display
+        let btn = document.querySelector("#btn"); 
+
+        let counter = "0"
+        btn.addEventListener ("click", function () {
+            counter++;
+
+            let r = Math.floor(Math.random() * 255);
+            let g = Math.floor(Math.random() * 255);
+            let b = Math.floor(Math.random() * 255);
+            let rgb = [r, g, b];
+
+            colorChanged.textContent = `Background color changed ${counter} times`; // Changing title
+            document.body.style.backgroundColor = `rgb(${rgb})`; // changing BG-Color 
+            Rgb.textContent = `RGB : ${rgb}`; // changing RGB value
+            
+            // bg-color is dark then change the content color white for batter visible
+            if (rgb[0] < 100 || rgb[1] < 100 || rgb[2] < 100) {
+                colorChanged.style.color = "white";
+                Rgb.style.color = "white";
+            }else{
+                colorChanged.style.color = "black";
+                Rgb.style.color = "black";
+            }
+        });
+    </script>
+</body>
+</html>
