@@ -3,9 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     letter-spacing: 1px;
+    color: white;
 }
 
 /* css tamplete */
@@ -22,54 +23,76 @@
     align-items: center;
 }
 
-
 body{
     display: flex;
     flex-direction: column;
     align-items: start;
     color: white;
-    background-color: rgba(0, 111, 199, 0.5);
+    background-color: rgba(0, 0, 0, 1);
 }
 
 body> .container{
     width: 100%;
     max-width: 1024px;
     align-self: center;
-    /* border: 3px solid black; */
     row-gap: 10rem;
     margin-top: 2rem;
 }
-
 .header{
     position: sticky;
     top: 0px;
     z-index: 1;
     backdrop-filter: blur(2px);
-    padding: 0.25rem;
     width: 100%;
-    background-color: rgba(0, 145, 222, 0.5);
-    box-shadow: 0px 0px 5px 1px rgba(22, 22, 22, 0.5);
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 8px 2px rgba(55, 55, 255, 0.8);
 }
-
 body ul{
-    gap: 1rem;
     list-style: none;
     text-transform: uppercase;
 }
-.header> ul li{
-    width: 200px;
+.header> ul> li a{
+    opacity: 0.75;
     height: 50px;
-}
-.header> ul a{
-    opacity: 0.5;
-    color: white;
+    padding: 0px 10px;
+    margin-right: 0.5rem;
     text-decoration: none;
     transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
 }
-.header .scal:hover{
+.sub-menu .scal{
+    height: 35px;
+}
+.header .scal:hover {
     opacity: 1;
-    transform: scale(1.05);
     text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+/* date 16/03/2024 */
+.header .menu-items{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+}
+.header .sub-menu{
+    width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 10px 0px;
+    position: absolute;
+    z-index: -11;
+    top: -140px;
+    left: 0px;
+    transition: all 0.4s ease-in-out;
+    background-color: rgba(55, 55, 255, 0.9);
+}
+.header .menu-items:hover .sub-menu{
+    top: 50px;
+    opacity: 1;
 }
 /* header done */
 
@@ -103,9 +126,8 @@ body ul{
     background-color: rgba(0, 145, 222, 0.1);
 }
 
+
 /* hover Animation */
-
-
 .left-slide{
     width: 300px;
     border-radius: 5px;
@@ -116,6 +138,21 @@ body ul{
 .ro-rev{
     flex-direction: row-reverse;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* media query only 768px */
 @media (min-width: 768px) {
@@ -154,29 +191,13 @@ body ul{
     .left-slide{
         display: flex;
         justify-content: center;
-
     }
-
-
-
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* media query */
-
 @media (max-width: 767px) {
     .pc{
         display: none;
@@ -219,4 +240,5 @@ body ul{
 
 
 }
+
 
